@@ -7,10 +7,9 @@ def MPD(A: np.matrix, x0: np.matrix, tol: float, max_steps: int):
 
 	while np.linalg.norm(A * x - lmb * x) > tol and steps < max_steps:
 		steps += 1
-		# print(lmb)
+
 		x = A * x
 		x /= np.linalg.norm(x)
 		lmb = float(np.transpose(x) * A * x)
 
-
-	return (lmb, x)
+	return lmb, x
