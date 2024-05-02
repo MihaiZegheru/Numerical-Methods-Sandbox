@@ -161,3 +161,8 @@ cython_debug/
 
 # VSCode
 ./tempCodeRunnerFile.py
+
+# Other
+res/*
+in
+out
